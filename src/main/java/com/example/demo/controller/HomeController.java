@@ -211,7 +211,7 @@ public class HomeController<fileOutputStream> {
 
             Row row = sheet.createRow(rowNum++);
             row.createCell(0).setCellValue(facture.getId());
-            row.createCell(1).setCellValue(facture.getClient());
+            row.createCell(1).setCellValue(facture.getClient().getNom());
         }
 
         workbook.write(response.getOutputStream());
